@@ -1,0 +1,11 @@
+{
+  "name": "wood_signspiration_landing",
+  "version": "1.0.0",
+  "description": "Landing page for Wood Signspiration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremiah Rey Perez",
+  "license": "MIT"
+}
