@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "Landing page for Wood Signspiration",
   "main": "index.js",
+  "homepage": "https://jeremiahreyperez.github.io/wood_signspiration_landing",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Jeremiah Rey Perez",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^2.0.0"
+  }
 }
