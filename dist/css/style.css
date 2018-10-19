@@ -1,36 +1,32 @@
-/* Remove any default padding or margin */
-/* * {
-  padding: 0;
-  margin: 0;
-} */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
   background: rgba(0, 0, 0, 0.9);
   margin: 0;
   color: #fff;
-  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .showcase::after {
-  content: "";
+  content: '';
   height: 100vh;
   width: 100%;
-  background-image: url(../images/showcase.jpg);
-  opacity: 0.8;
+  background-image: url(../images/showcase2.jpg);
+  opacity: 0.7;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
-  filter: blur(10px);
+  /* filter: blur(10px);
   -webkit-filter: blur(10px);
   backface-visibility: hidden;
   transform: translateZ(0) scale(1, 1);
   -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(1, 1);
-  transition: all 1250ms cubic-bezier(0.57, 0.02, 0, 0.65);
+  -webkit-transform: translateZ(0) scale(1, 1); 
+  transition: all 1250ms cubic-bezier(0.57, 0.02, 0, 0.65); */
 }
 
-.showcase:hover::after {
+/* .showcase:hover::after {
   filter: blur(0px);
   -webkit-filter: blur(0px);
 }
@@ -38,7 +34,7 @@ body {
 .showcase:hover .content {
   filter: blur(1px);
   -webkit-filter: blur(1px);
-}
+} */
 
 .content {
   position: absolute;
@@ -49,11 +45,11 @@ body {
   width: 600px;
   height: 300px;
   text-align: center;
-  transition: all 1250ms cubic-bezier(0.8, 0.13, 0, 0.56);
+  /* transition: all 1250ms cubic-bezier(0.8, 0.13, 0, 0.56);
   backface-visibility: hidden;
   transform: translateZ(0) scale(1, 1);
   -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(1, 1);
+  -webkit-transform: translateZ(0) scale(1, 1); */
 }
 
 .content .logo {
@@ -67,7 +63,8 @@ body {
 }
 
 .content .text {
-  line-height: 1.7;
+  line-height: 1.7rem;
+  font-size: 1.3rem;
   margin-top: 1rem;
 }
 
@@ -80,13 +77,8 @@ body {
 
 .socialMedia i {
   padding: 10px;
-  border: #333 solid 1px;
   border-radius: 5px;
-  box-sizing: border-box;
-}
-
-.socialMedia i .etsy {
-  padding: 5px 10px;
+  transition-duration: 1s;
 }
 
 .socialMedia a {
@@ -95,16 +87,12 @@ body {
 }
 
 .socialMedia i:hover {
-  color: #fff;
-  border: #fff solid 1px;
-  box-sizing: border-box;
-  font-weight: 600;
+  background: #ddd;
+  color: #333;
 }
 
-.grid-3 {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
+.socialMedia p {
+  padding: 0 7rem;
 }
 
 .grid-2 {
@@ -164,7 +152,6 @@ footer p {
     display: none;
   }
 
-  .grid-3,
   .grid-2 {
     grid-template-columns: 1fr;
   }
