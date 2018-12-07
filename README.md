@@ -1,5 +1,4 @@
 # wood_signspiration_landing
-This is a landing page for Wood Signspiration & Creations small business.
+This is a fully responsive landing page for Wood Signspiration & Creations small business.
 
-Update is on hold due to business owner making some changes to business branding.
-
+The page includes a showcase related to the business's product, social media links, and about information.
